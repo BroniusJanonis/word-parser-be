@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="sysdate" dbms="oracle"/>
+    <property name="now" value="now()" dbms="mysql,h2"/>
+
+    <property name="varcharUnit" value="CHAR" dbms="oracle"/>
+    <property name="varcharUnit" value=""/>
+
+    <include file="db/changelog/v1.0/structure-log.xml" relativeToChangelogFile="false"/>
+    <include file="db/changelog/v1.0/data-log-dev.xml" relativeToChangelogFile="false"/>
+
+</databaseChangeLog>

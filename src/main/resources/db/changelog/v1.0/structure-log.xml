@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+    <property name="now" value="sysdate" dbms="oracle"/>
+    <property name="now" value="now()" dbms="mysql,h2,postgresql"/>
+    <property name="systemId" value="7af128a2-b301-11e5-9f22-ba0be0483c18"/>
+
+    <changeSet id="create_file_upload_entity" author="bjanonis">
+        <createTable tableName="FILE_UPLOAD">
+            <column name="id" type="varchar(36 ${varcharUnit})">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="file_content" type="blob">
+                <constraints nullable="false"/>
+            </column>
+            <column name="file_name" type="varchar(126 ${varcharUnit})">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uploaded_on" type="TIMESTAMP WITH TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="content_type" type="varchar(126 ${varcharUnit})">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

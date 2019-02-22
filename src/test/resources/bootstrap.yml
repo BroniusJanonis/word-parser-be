@@ -1,0 +1,11 @@
+---
+# To disable Eureka and Configuration services during tests during booting
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: false
+
+eureka:
+  client:
+    enabled: false

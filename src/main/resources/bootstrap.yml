@@ -1,0 +1,12 @@
+---
+server:
+  port: 7001
+
+spring:
+  application:
+    name: word-parser-be
+  cloud:
+    config:
+      fail-fast: true
+      uri: http://157.230.27.96:8001
+      profile: word-parser-be
