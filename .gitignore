@@ -1,26 +1,118 @@
-.gradle
-/build/
-!gradle/wrapper/gradle-wrapper.jar
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+### Intellij ###
 *.iml
+.idea/
 *.ipr
+*.iws
 /out/
+.idea_modules/
 
 ### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+.nb-gradle/
+
+### Eclipse ###
+*.pydevproject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.project
+.externalToolBuilders/
+*.launch
+.cproject
+.classpath
+.factorypath
+.buildpath
+.target
+.texlipse
+.springBeans
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+### Gradle ###
+.gradle
+build/
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+######################
+# Gradle Wrapper
+######################
+!gradle/wrapper/gradle-wrapper.jar
+
+# JRebel #
+rebel.xml
+
+# persistence .xml for idea #
+persistence.xml
+
+# Folder config file
+Desktop.ini
+
+######################
+# Mac OSX
+######################
+.DS_Store
+.svn
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+######################
+# Directories
+######################
+/build/**
+/bin/**
+/data/**
+/spring_loaded/**
+/deploy/**
+
+######################
+# Logs
+######################
+*.log
+
+######################
+# Others
+######################
+*.class
+*.*~
+*~
+.merge_file*
+
+
+######################
+# Windows
+######################
+# Windows image file caches
+Thumbs.db
+node_modules/
