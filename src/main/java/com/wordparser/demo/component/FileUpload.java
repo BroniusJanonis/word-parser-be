@@ -32,7 +32,7 @@ public class FileUpload {
         return id;
     }
 
-    public void setId(String id) {
+    private void setId(String id) {
         this.id = id;
     }
 
@@ -40,7 +40,7 @@ public class FileUpload {
         return fileContent;
     }
 
-    public void setFileContent(byte[] fileContent) {
+    private void setFileContent(byte[] fileContent) {
         this.fileContent = fileContent;
     }
 
@@ -48,7 +48,7 @@ public class FileUpload {
         return fileName;
     }
 
-    public void setFileName(String fileName) {
+    private void setFileName(String fileName) {
         this.fileName = fileName;
     }
 
@@ -56,7 +56,7 @@ public class FileUpload {
         return uploadedOn;
     }
 
-    public void setUploadedOn(LocalDateTime uploadedOn) {
+    private void setUploadedOn(LocalDateTime uploadedOn) {
         this.uploadedOn = uploadedOn;
     }
 
@@ -64,7 +64,7 @@ public class FileUpload {
         return contentType;
     }
 
-    public void setContentType(FileContentType contentType) {
+    private void setContentType(FileContentType contentType) {
         this.contentType = contentType;
     }
 
